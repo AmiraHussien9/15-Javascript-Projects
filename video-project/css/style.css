@@ -1,0 +1,102 @@
+body {
+  
+
+   overflow: hidden;
+   
+    
+}
+* {
+    box-sizing: border-box;
+}
+
+
+
+.video-container {
+    width: 100%;
+    height: 100%;
+
+    
+ 
+}
+
+.main-container {
+    position: relative ;
+
+}
+
+/* overLay */
+ .main-container::after {
+    content: "";
+    position: absolute;
+    background-color: #00000080;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 33;
+} 
+
+.videoTitle {
+    position: absolute;
+    z-index: 44;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -50%);
+    color: rgb(232, 232, 232);
+    text-transform: uppercase;
+    font-weight: bolder;
+    
+}
+
+
+/* button */
+
+.switch-btn {
+    position: relative;
+    bottom: 200px; 
+    left: 40px;
+    background-color: white !important;
+    border: none;
+    border-radius: 30px;
+    padding: 5px 10px;
+    z-index: 55;
+
+}
+
+.switch-btn .play {
+    width: 50%;
+    margin-right: 3px;
+}
+
+.switch {
+    position: absolute;
+    width: 60%;
+    height: 100%;
+    background-color: #5f5ff0;
+    z-index: 88;
+    left: 0;
+    border-radius: 30px;
+    top: 0;
+
+}
+
+.slide .switch {
+    left: 50%;
+}
+
+
+/* loading ... */
+
+.js div#preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+    
+  
+    background: #333 url('https://svgshare.com/i/TGi.svg') no-repeat center center;
+  }
+  

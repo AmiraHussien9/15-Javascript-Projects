@@ -1,0 +1,239 @@
+/******* Start Global Variables ********/
+:root {
+    --headerColor:#012970;
+    --linkColor:#013289;
+    --boxColor:#4154f1;
+    --bgColor:#f6f9ff;
+    --padding:90px;
+}
+/********* End Global Variables **********/
+
+
+/******** start Global Rules  **********/
+
+@media(max-width:650px) {
+   .container {
+       width: 90%;
+   }
+}
+
+
+body {
+   font-family: 'Nunito Sans', sans-serif;
+   color: #444444;
+   /* overflow: hidden; */
+}
+
+ul {
+   list-style: none;
+}
+a {
+   text-decoration: none;
+}
+/* link "get start" */
+
+.link a {
+   color: white;
+   text-decoration: none;
+   font-weight: 600;
+   font-size: 16px;
+   letter-spacing: 1px;
+  
+}
+
+/* .links-container {
+  height: 0;  
+    overflow: hidden;
+} */
+
+
+.show-links {
+    height: 400px;
+}
+.link i {
+   position: relative;
+   transition: all .4s;
+}
+.link:hover i {
+   transform: translateX(5px)
+}
+.link {
+   background-color: var(--boxColor);
+   text-align: center;
+   padding: 14px;
+   width: 33%;
+   margin-top: 20px;
+   border-radius: 5px;
+   color: white;
+   cursor: pointer;
+   box-shadow: 0px 5px 30px rgb(65 84 241 / 40%);
+}
+/******** End Global Rules  **********/
+
+
+
+/********* start Navbar **********/
+header {
+   position: fixed;
+   width: 100%;
+   margin-bottom: 20px;
+   z-index: 9999;
+   transition:  1s all;
+}
+
+.navbar-light .navbar-brand {
+   color:var(--headerColor);
+   font-weight: 700;
+   font-size: 30px;
+   letter-spacing: 1px;
+   
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link.active {
+   color: #4154f1 !important;
+   font-size: 17px;
+   font-weight: 700;
+   margin-right: 25px;
+   
+}
+.navbar-light .navbar-nav .nav-link,
+.navbar-light .navbar-nav .nav-link.active {
+   color: var(--linkColor);
+   margin-right: 25px;
+   
+}
+.navbar-light .navbar-nav .nav-link,
+.navbar-light .navbar-nav .nav-link.active:hover{
+   font-size: 17px;
+   font-weight: 700;
+   margin-right: 25px;
+ 
+} 
+
+
+
+
+.navbar .box-link {
+   background-color: var(--boxColor);
+   text-align: center;
+   padding: 0px 18px ;
+   border-radius: 5px;
+   color: white;
+   cursor: pointer;
+   transition: all .5s;
+  
+}
+.navbar .box-link:hover {
+   background-color: #4154f1c2;
+}
+.navbar .box-link .nav-link,
+.navbar .box-link .nav-link:hover {
+   color: white !important;
+   margin-right: 0!important;
+}
+/******** end Navbar *********/
+
+
+/********start home section ******/
+#home{
+   background-image: url("https://i.pinimg.com/originals/7a/fb/10/7afb1083d714bb26516b4830482f9f6d.jpg");
+   height: 100vh;
+   width: 100% ;
+    background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   padding-top: 50px;
+   position: relative;
+
+}
+
+#home::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #0000005e;
+    left: 0;
+    top: 0;
+}
+
+.homeTitle {
+    position: absolute;
+    z-index: 99999;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -50%);
+    color: white;
+    font-weight: bolder;
+    font-size: 70px;
+}
+
+
+
+/********End home section ************/
+
+
+
+
+/********start about section ***********/
+
+#about {
+   padding-top: var(--padding);
+   
+}
+#about .container{
+   padding-right:0px !important;
+   background-color: var(--bgColor);
+ 
+   
+ 
+}
+
+.about-content {
+   padding: 30px;
+}
+
+#about .about-content h4 {
+   font-size: 14px;
+   font-weight: 700;
+   color: var(--boxColor);
+   margin-right: 0px !important;
+}
+
+.about-content h2 {
+   font-size: 24px;
+   font-weight: 700;
+   color: var(--headerColor);
+}
+.about-content p {
+   margin: 15px 0 30px 0;
+   line-height: 24px;
+}
+
+.about-image {
+   height: 110%;
+   background-color: red;
+   position: relative;
+   top: 50%;
+   transform: translateY(-50%);
+}
+
+#about .row>* {
+   padding-left:0px !important;
+}
+
+
+
+ /* footer */
+ footer{
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #111;
+    height: auto;
+    width: 100%;
+    padding-top: 40px;
+    color: #fff;
+}

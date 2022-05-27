@@ -1,0 +1,33 @@
+body {
+    height: 100vh;
+    
+}
+
+
+.question {
+    
+}
+
+
+
+/* hide text */
+.question-text {
+    display: none;
+    border-top:  3px solid #eee;
+}
+
+.show-text {
+    display: block;
+}
+
+.minus-icon {
+    display: none;
+}
+
+/* .show-text .minus-icon {
+    display: block;
+} */
+
+.show-text .plus-icon {
+    display: none;
+}
