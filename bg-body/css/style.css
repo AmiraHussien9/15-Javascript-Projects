@@ -1,0 +1,13 @@
+
+
+body {
+    height: 100vh;
+}
+
+a {
+    text-decoration:  none;
+}
+li {
+   list-style: none;
+   margin-left:  10px;
+}

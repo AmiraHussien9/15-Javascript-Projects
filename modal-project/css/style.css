@@ -1,0 +1,37 @@
+body {
+    height: 100vh;
+    width: 100%;
+    background-image: url("https://d3rf6j5nx5r04a.cloudfront.net/_W_GJCVagugCygLvI2QdytxPu5w=/1536x922/homepage_banner/c/0/b50926a142fe46fe96afaa996d03d69c.png");
+}
+
+.modal-card {
+    border-radius: 30px;
+    background-color: #eee;
+    box-shadow: 4px 4px 5px black;
+}
+
+button {
+    box-shadow: 2px 2px 3px rgb(127, 123, 118) ;
+}
+
+.overLay {
+    position: fixed;
+    background-color: #0000ff9e;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 77755;
+    display: none;
+    transition: .3s;
+}
+
+.modal-content {
+    position: relative;
+}
+i {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+}
